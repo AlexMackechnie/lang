@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mackechniealex-py-pkg
+Version: 0.0.1
+Summary: Alex Mackechnie test package.
+Author-email: Alex Mackechnie <mackechniealex@gmail.com>
+Project-URL: Homepage, https://github.com/AlexMackechnie/scratchpad/tree/main/lang/python/packages/packaging_tutorial
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# README
+
