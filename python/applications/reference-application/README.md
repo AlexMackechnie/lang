@@ -1,8 +1,39 @@
 # Reference Python Application
 
 # Setup
+
+## Production
 ```bash
+# Build Wheel and Requirements
 python -m pip install --upgrade build pip-tools
+python -m piptools compile -o requirements.txt pyproject.toml
+
+# Install
+python -m pip install -r requirements.txt
+python -m pip install <wheel-file> --no-deps
+
+# Run
+python -m <module-name>
+```
+
+## Run in Production
+```bash
+```
+
+## Development
+```bash
+# Build Requirements
+python -m pip install --upgrade pip-tools
+python -m piptools compile -o requirements.txt pyproject.toml
+python -m piptools compile --extra dev -o dev-requirements.txt pyproject.toml
+
+# Install
+python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
+python -m pip install -e . --no-deps
+
+# Run
+python -m <module-name>
 ```
 
 # Makefile
