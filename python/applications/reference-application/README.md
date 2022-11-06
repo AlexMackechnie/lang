@@ -16,10 +16,6 @@ python -m pip install <wheel-file> --no-deps
 python -m <module-name>
 ```
 
-## Run in Production
-```bash
-```
-
 ## Development
 ```bash
 # Build Requirements
