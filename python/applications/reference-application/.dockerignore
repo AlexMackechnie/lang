@@ -1,0 +1,10 @@
+requirements-dev.in
+requirements-dev.txt
+requirements.in
+.dockerignore
+README.md
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+tests
