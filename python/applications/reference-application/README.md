@@ -7,10 +7,13 @@
 # Build Wheel and Requirements
 python -m pip install --upgrade build pip-tools
 python -m piptools compile -o requirements.txt pyproject.toml
+python -m build
+
+# Copy requirements.txt and <wheel-file> to prod env.
 
 # Install
 python -m pip install -r requirements.txt
-python -m pip install <wheel-file> --no-deps
+python -m pip install dist/<wheel-file> --no-deps
 
 # Run
 python -m <module-name>
