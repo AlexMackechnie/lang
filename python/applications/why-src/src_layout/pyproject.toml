@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "why-use-src-layout"
+description = "This is a simple reference Python application using pyproject.toml."
+classifiers = ["Private :: Do Not Upload"]
+version = "0.0.1"
+dependencies = []
+requires-python = ">=3.9"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+#[tool.setuptools]
+#packages = 
+#package-dir = {"" = "src"}
+
+[tool.distutils.bdist_wheel]
+universal = true
+
